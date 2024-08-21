@@ -15,30 +15,38 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- configuration tailwind css style -->
-    <!-- <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        btnColor: '#ABEF5F',
-                        navIcon: '#737373',
-                        descriptionColor: '#494949',
+                        clifford: '#da373d',
                     },
                     fontFamily: {
-                        Poppins: 'Poppins',
+                        manrope: ['Manrope', 'sans-serif'],
                     },
-                }
-            }
+                    backgroundImage: {
+                        imageOne: "url('file:///C:/Projects/Programing%20Hero/Milestone%20-03/assignment%20-%203/assets/bg.jpg')",
+                    }
+                },
+            },
         }
-    </script> -->
+    </script>
     <style>
-        *{
+        * {
             font-family: "Manrope";
+        }
+
+        .contact-form {
+            background-image: url('./assets/bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     </style>
 </head>
 
-<body class="Poppins">
+<body class="manrope">
     <header class="bg-gradient-to-r from-[#ffffff00] to-[rgb(255,255,255)] manrope">
         <nav class="navigation-bar-styles pt-10 md:w-10/12 w-full mx-auto">
             <div class="navbar justify-between mb-10">
@@ -50,11 +58,11 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-[#494949]">
-                        <li><a class=" text-[1rem] font-extrabold">Home</a></li>
-                        <li><a class="text[1rem]">Services</a></li>
-                        <li><a class="text[1rem]">Portfolio</a></li>
-                        <li><a class="text[1rem]">Blogs</a></li>
-                        <li><a class="text[1rem]">Contact Us</a></li>
+                        <li><a class=" text-lg font-extrabold">Home</a></li>
+                        <li><a class="text-lg">Services</a></li>
+                        <li><a class="text-lg">Portfolio</a></li>
+                        <li><a class="text-lg">Blogs</a></li>
+                        <li><a class="text-lg">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end hidden md:flex gap-4">
@@ -123,6 +131,7 @@
         </section>
     </header>
     <main class="bg-[#f4f4f4] w-full">
+        <!-- residential section -->
         <section class="residential-container">
             <div class="md:p-24">
                 <div class="flex md:w-10/12 mx-auto w-full flex-col  lg:flex-row ">
@@ -134,8 +143,10 @@
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </div>
                             </div>
-                            <h3 class="md:text-5xl text-3xl md:mt-0 mt-5 font-extrabold w-full">We design thoughtful, liveable spaces</h3>
-                            <p class="md:w-4/5 w-full text-[#494949] py-5">The barn house captivates with its blend of rustic charm and
+                            <h3 class="md:text-5xl text-3xl md:mt-0 mt-5 font-extrabold w-full">We design thoughtful,
+                                liveable spaces</h3>
+                            <p class="md:w-4/5 w-full text-[#494949] py-5">The barn house captivates with its blend of
+                                rustic charm and
                                 modern sophistication, featuring weathered wood, sleek metal accents.</p>
                         </div>
                         <div class="bg-white flex items-center gap-5 p-6 rounded-3xl mb-5">
@@ -144,7 +155,8 @@
                             </div>
                             <div class="md:w-2/4 w-full">
                                 <h3 class="text-lg font-extrabold">Commercial</h3>
-                                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and
+                                    modern.</p>
                             </div>
                         </div>
                         <div class="bg-white flex items-center gap-5 p-6 rounded-3xl">
@@ -153,7 +165,8 @@
                             </div>
                             <div class="md:w-2/4 w-full">
                                 <h3 class="text-lg font-extrabold">Residential</h3>
-                                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and
+                                    modern.</p>
                             </div>
                         </div>
                     </div>
@@ -163,44 +176,108 @@
                 </div>
             </div>
         </section>
+        <!-- work progress section -->
         <section class="work-process-grid-layout">
             <div class="md:w-10/12 w-full mx-auto text-center">
                 <div class="inline-flex items-center bg-white px-5 md:mb-10 gap-3 py-3 rounded-3xl">
-                    <p>About Us</p>
+                    <p>How we works</p>
                     <div class=" text-black">
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </div>
                 <h3 class="md:text-5xl text-3xl font-extrabold mb-4">Our Works Process</h3>
-                <p class="md:w-2/5 w-full mx-auto text-center text-[#494949] mb-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <p class="md:w-2/5 w-full mx-auto text-center text-[#494949] mb-6">The barn house captivates with its
+                    blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 <div class="grid-layout-content grid md:grid-cols-4 grid-cols-1 gap-3 md:px-20 px-5">
                     <div class="text-left bg-[#E7C1D3] rounded-2xl p-6 md:w-80">
                         <div>
                             <img src="./assets/concept.png" alt="">
                         </div>
                         <h3 class="text-lg font-extrabold mt-3">Concept</h3>
-                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm
+                            and modern.</p>
                     </div>
                     <div class="text-left bg-[#EFDA6E] rounded-2xl p-6 md:w-80">
                         <div>
                             <img src="./assets/flow-chart.png" alt="">
                         </div>
                         <h3 class="text-lg font-extrabold mt-3">Design Process</h3>
-                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm
+                            and modern.</p>
                     </div>
                     <div class="text-left bg-[#A4DAC3] rounded-2xl p-6 md:w-80">
                         <div>
                             <img src="./assets/vision.png" alt="">
                         </div>
                         <h3 class="text-lg font-extrabold mt-3">Supervision</h3>
-                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm
+                            and modern.</p>
                     </div>
                     <div class="text-left bg-[#77AAEA] rounded-2xl p-6 md:w-80">
                         <div>
                             <img src="./assets/budget-planning.png" alt="">
                         </div>
                         <h3 class="text-lg font-extrabold mt-3">Budget Planning</h3>
-                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <p class="text-[#494949] md:w-56 py-2">The barn house captivates with its blend of rustic charm
+                            and modern.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact form section -->
+        <section class="contact-form w-full mt-10 border-8 border-solid border-white">
+            <div class="bg-opacity-55 bg-white">
+                <div class="text-center">
+                    <div class="inline-flex items-center bg-[rgba(172,239,95,0.21)] px-5 md:my-10 gap-3 my-4 py-3 rounded-3xl ">
+                        <p>Let’s Connect</p>
+                        <div class=" text-black">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="md:text-5xl text-3xl font-extrabold">Let’s Discuss Next Project</h3>
+                    <p class="text-lg py-5 md:w-2/5 mx-auto">The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div>
+                    <div class="w-full md:w-3/5 mx-auto p-8 rounded-lg">
+                        <form>
+                            <div class="grid md:grid-cols-2 grid-cols-1 gap-5 mb-6">
+                                <div class="mb-4">
+                                    <input type="text" id="name" placeholder="First Name *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
+    
+                                <div class="mb-4">
+                                    <input type="text" id="email" placeholder="Last Name *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
+                            </div>
+    
+                            <div class="grid md:grid-cols-2 grid-cols-1 gap-5 mb-5">
+                                <div class="mb-4">
+                                    <input type="tel" id="phone" placeholder="Phone Number *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
+    
+                                <div class="mb-4">
+                                    <input type="email" id="email" placeholder="Email Address *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
+                            </div>
+    
+                            <div class="mb-4 h-2/4">
+                                <textarea name="" id="" placeholder="Write your message here"
+                                    class="mt-1 outline-none text-[#A0A0A0] w-full p-5 rounded-2xl  h-60 bg-white"></textarea>
+                            </div>
+    
+                            <div class="flex w-full items-center bg-[#ABEF5F] justify-center gap-5 py-2 rounded-full btn">
+                                <a class=" text-black text-xl font-extrabold rounded-full hover:text-black">Send Message</a>
+                                <span
+                                    class=" bg-black text-[#ABEF5F] w-8 h-8  rounded-full flex justify-center items-center">
+                                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                                </span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
