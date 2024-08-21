@@ -15,7 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- configuration tailwind css style -->
-    <script>
+    <!-- <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -25,21 +25,26 @@
                         descriptionColor: '#494949',
                     },
                     fontFamily: {
-                        manrope: 'Manrope',
+                        Poppins: 'Poppins',
                     },
                 }
             }
         }
-    </script>
+    </script> -->
+    <style>
+        *{
+            font-family: "Manrope";
+        }
+    </style>
 </head>
 
-<body>
+<body class="Poppins">
     <header class="bg-gradient-to-r from-[#ffffff00] to-[rgb(255,255,255)] manrope">
-        <nav class="navigation-bar-styles pt-10 w-10/12 mx-auto">
+        <nav class="navigation-bar-styles pt-10 md:w-10/12 w-full mx-auto">
             <div class="navbar justify-between mb-10">
-                <div class="navbar-start inline-flex md:gap-3 items-center">
-                    <div class="-rotate-45 bg-[#ABEF5F] text-black w-10 h-10 rounded-full flex justify-center items-center">
-                        <i class="fa-solid fa-arrow-right"></i>
+                <div class="navbar-start inline-flex md:gap-3 gap-1 items-center">
+                    <div class=" bg-[#ABEF5F] text-black w-8 h-8  rounded-full flex justify-center items-center">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
                     </div>
                     <a class="font-extrabold text-3xl">Rinterio</a>
                 </div>
@@ -81,7 +86,7 @@
                         <i class="fa-solid fa-bars text-[#737373]"></i>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 bg-white">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
@@ -98,11 +103,16 @@
                         <div class="flex justify-center items-center">
                             <img src="./assets/banner.png" alt="">
                         </div>
-                        <h1 class="lg:text-6xl md:text-4xl text-3xl font-extrabold md:w-4/5 w-full text-center mx-auto ">A barn house of this design has a striking appearance</h1>
+                        <h1
+                            class="lg:text-6xl md:text-4xl text-3xl font-extrabold md:w-4/5 w-full text-center mx-auto ">
+                            A barn house of this design has a striking appearance</h1>
                         <p class="py-8 text-[#494949] md:w-4/5 w-full mx-auto text-center">
-                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring weathered wood, sleek metal accents, and large windows that flood the space with
+                            natural light.
                         </p>
-                        <div class="bg-[rgba(172,239,95,0.5)] py-3 px-5 flex items-center gap-3 rounded-[32px] md:w-52 w-full text-center mx-auto justify-center mb-20">
+                        <div
+                            class="bg-[rgba(172,239,95,0.5)] py-3 px-5 flex items-center gap-3 rounded-[32px] md:w-52 w-full text-center mx-auto justify-center mb-20">
                             <a class="text-xl font-semibold">View Details</a>
                             <i
                                 class="fa-solid fa-arrow-right -rotate-45 text-black bg-[#ABEF5F] w-8 h-8 rounded-full flex justify-center items-center"></i>
@@ -112,8 +122,47 @@
             </div>
         </section>
     </header>
-    <main class="bg-[]">
-        
+    <main class="bg-[#f4f4f4] w-full">
+        <section class="residential-container">
+            <div class="md:p-24">
+                <div class="flex md:w-10/12 mx-auto w-full flex-col  lg:flex-row ">
+                    <div class="card grid flex-grow  p-5 flex-1">
+                        <div class="md:text-left text-center">
+                            <div class="inline-flex items-center bg-white px-5 md:mb-20 gap-3 py-3 rounded-3xl">
+                                <p>About Us</p>
+                                <div class=" text-black">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <h3 class="md:text-4xl text-3xl md:mt-0 mt-5 font-extrabold md:w-3/5 w-full">We design thoughtful, liveable spaces</h3>
+                            <p class="md:w-4/5 w-full text-[#494949] py-5">The barn house captivates with its blend of rustic charm and
+                                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        </div>
+                        <div class="bg-white flex items-center gap-5 p-6 rounded-3xl mb-5">
+                            <div>
+                                <img src="./assets/commercial.png" alt="">
+                            </div>
+                            <div class="md:w-2/4 w-full">
+                                <h3 class="text-lg font-extrabold">Commercial</h3>
+                                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white flex items-center gap-5 p-6 rounded-3xl">
+                            <div>
+                                <img src="./assets/residential.png" alt="">
+                            </div>
+                            <div class="md:w-2/4 w-full">
+                                <h3 class="text-lg font-extrabold">Residential</h3>
+                                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card rounded-box grid flex-grow  p-5 flex-1">
+                        <img class="w-full" src="./assets/Rectangle.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
