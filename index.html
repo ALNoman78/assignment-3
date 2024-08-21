@@ -25,22 +25,98 @@
                         descriptionColor: '#494949',
                     },
                     fontFamily: {
-                        manrope: ['Manrope', 'sans-serif'],
+                        manrope: 'Manrope',
                     },
-                },
-            },
+                }
+            }
         }
-    </script>    
+    </script>
 </head>
-<body class="manrope">
-    <header>
 
+<body>
+    <header class="bg-gradient-to-r from-[#ffffff00] to-[rgb(255,255,255)] manrope">
+        <nav class="navigation-bar-styles pt-10 w-10/12 mx-auto">
+            <div class="navbar justify-between mb-10">
+                <div class="navbar-start inline-flex md:gap-3 items-center">
+                    <div class="-rotate-45 bg-[#ABEF5F] text-black w-10 h-10 rounded-full flex justify-center items-center">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <a class="font-extrabold text-3xl">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#494949]">
+                        <li><a class=" text-[1rem] font-extrabold">Home</a></li>
+                        <li><a class="text[1rem]">Services</a></li>
+                        <li><a class="text[1rem]">Portfolio</a></li>
+                        <li><a class="text[1rem]">Blogs</a></li>
+                        <li><a class="text[1rem]">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end hidden md:flex gap-4">
+                    <div
+                        class=" bg-white border border-solid border-[#E9E9E9] rounded-full w-12 h-12 inline-flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
+                    <div
+                        class=" bg-white border border-solid border-[#E9E9E9] rounded-full w-12 h-12 inline-flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+                    </div>
+                    <div class="bg-[#ABEF5F] py-3 px-5 flex items-center gap-3 rounded-[32px]">
+                        <a class="text-xl font-extrabold">Book Consult</a>
+                        <i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white w-8 h-8 rounded-full flex justify-center items-center"></i>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button"
+                        class="btn btn-ghost lg:hidden bg-white border border-solid border-[#E9E9E9] rounded-full">
+                        <i class="fa-solid fa-bars text-[#737373]"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="banner-container md:w-10/12 w-full mx-auto">
+            <div class="hero">
+                <div class="hero-content text-center flex-col justify-center items-center">
+                    <div class="">
+                        <div class="flex justify-center items-center">
+                            <img src="./assets/banner.png" alt="">
+                        </div>
+                        <h1 class="lg:text-6xl md:text-4xl text-3xl font-extrabold md:w-4/5 w-full text-center mx-auto ">A barn house of this design has a striking appearance</h1>
+                        <p class="py-8 text-[#494949] md:w-4/5 w-full mx-auto text-center">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <div class="bg-[rgba(172,239,95,0.5)] py-3 px-5 flex items-center gap-3 rounded-[32px] md:w-52 w-full text-center mx-auto justify-center mb-20">
+                            <a class="text-xl font-semibold">View Details</a>
+                            <i
+                                class="fa-solid fa-arrow-right -rotate-45 text-black bg-[#ABEF5F] w-8 h-8 rounded-full flex justify-center items-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
-
+    <main class="bg-[]">
+        
     </main>
     <footer>
-        
+
     </footer>
 </body>
 
