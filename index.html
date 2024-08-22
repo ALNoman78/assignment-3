@@ -20,14 +20,14 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        clifford: '#737373',
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif'],
                     },
                     backgroundImage: {
                         imageOne: "url('file:///C:/Projects/Programing%20Hero/Milestone%20-03/assignment%20-%203/assets/bg.jpg')",
-                    }
+                    },
                 },
             },
         }
@@ -247,7 +247,8 @@
                     <div
                         class="card card-side  md:col-span-3 col-span-1 md:flex-row flex-col bg-white md:px-8 md:p-0 p-4 border border-solid border-[#E9E9E9] items-center">
                         <figure class="md:h-[160px] md:w-[437px] rounded-xl">
-                            <img class="w-full md:h-[160px] md:w-[255px] object-cover" src="./assets/img1.png" alt="Movie" />
+                            <img class="w-full md:h-[160px] md:w-[255px] object-cover" src="./assets/img1.png"
+                                alt="Movie" />
                         </figure>
                         <div class="card-body md:p-4 p-1">
                             <h2 class="card-title text-2xl font-extrabold">Commercial</h2>
@@ -303,70 +304,8 @@
                 </div>
             </div>
         </section>
-        <!-- contact form section -->
-        <section class="contact-form w-full  border-8 border-solid border-white">
-            <div class="bg-opacity-55 bg-white">
-                <div class="text-center">
-                    <div
-                        class="inline-flex items-center bg-[rgba(172,239,95,0.21)] px-5 md:my-10 gap-3 my-4 py-3 rounded-3xl ">
-                        <p>Let’s Connect</p>
-                        <div class=" text-black">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                    </div>
-                    <h3 class="md:text-5xl text-3xl font-extrabold">Let’s Discuss Next Project</h3>
-                    <p class="text-lg py-5 md:w-2/5 mx-auto">The barn house captivates with its blend of rustic charm
-                        and
-                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
-                </div>
-                <div>
-                    <div class="w-full md:w-3/5 mx-auto p-8 rounded-lg">
-                        <form>
-                            <div class="grid md:grid-cols-2 grid-cols-1 gap-5 mb-6">
-                                <div class="mb-4">
-                                    <input type="text" id="name" placeholder="First Name *"
-                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
-                                </div>
-
-                                <div class="mb-4">
-                                    <input type="text" id="email" placeholder="Last Name *"
-                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
-                                </div>
-                            </div>
-
-                            <div class="grid md:grid-cols-2 grid-cols-1 gap-5 mb-5">
-                                <div class="mb-4">
-                                    <input type="tel" id="phone" placeholder="Phone Number *"
-                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
-                                </div>
-
-                                <div class="mb-4">
-                                    <input type="email" id="email" placeholder="Email Address *"
-                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
-                                </div>
-                            </div>
-
-                            <div class="mb-4 h-2/4">
-                                <textarea name="" id="" placeholder="Write your message here"
-                                    class="mt-1 outline-none text-[#A0A0A0] w-full p-5 rounded-2xl  h-60 bg-white"></textarea>
-                            </div>
-
-                            <div
-                                class="flex w-full items-center bg-[#ABEF5F] justify-center gap-5 py-2 rounded-full btn">
-                                <a class=" text-black text-xl font-extrabold rounded-full hover:text-black">Send
-                                    Message</a>
-                                <span
-                                    class=" bg-black text-[#ABEF5F] w-8 h-8  rounded-full flex justify-center items-center">
-                                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- creative section styles (inspired form a website) -->
-        <section class="creative-sction w-full mt-10">
+        <section class="creative-sction w-full mt-10 pb-16 ">
             <div class="md:w-10/12 mx-auto w-full md:px-16 px-4">
                 <div class="text-part">
                     <h3 class="md:text-4xl text-2xl font-extrabold my-4">Discover how we can help</h3>
@@ -498,9 +437,101 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
+        <!-- contact form section -->
+        <section class="contact-form w-full  border-8 border-solid border-white">
+            <div class="bg-opacity-55 bg-white">
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center bg-[rgba(172,239,95,0.21)] px-5 md:my-10 gap-3 my-4 py-3 rounded-3xl ">
+                        <p>Let’s Connect</p>
+                        <div class=" text-black">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <h3 class="md:text-5xl text-3xl font-extrabold">Let’s Discuss Next Project</h3>
+                    <p class="text-lg py-5 md:w-2/5 mx-auto">The barn house captivates with its blend of rustic charm
+                        and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                <div>
+                    <div class="w-full md:w-3/5 mx-auto p-8 rounded-lg">
+                        <form>
+                            <div class="grid md:grid-cols-2 grid-cols-1 gap-5 mb-6">
+                                <div class="mb-4">
+                                    <input type="text" id="name" placeholder="First Name *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
 
+                                <div class="mb-4">
+                                    <input type="text" id="email" placeholder="Last Name *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 grid-cols-1 gap-5 mb-5">
+                                <div class="mb-4">
+                                    <input type="tel" id="phone" placeholder="Phone Number *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
+
+                                <div class="mb-4">
+                                    <input type="email" id="email" placeholder="Email Address *"
+                                        class="mt-1 outline-none text-[#A0A0A0] w-full p-4 rounded-full bg-white">
+                                </div>
+                            </div>
+
+                            <div class="mb-4 h-2/4">
+                                <textarea name="" id="" placeholder="Write your message here"
+                                    class="mt-1 outline-none text-[#A0A0A0] w-full p-5 rounded-2xl  h-60 bg-white"></textarea>
+                            </div>
+
+                            <div
+                                class="flex w-full items-center bg-[#ABEF5F] justify-center gap-5 py-2 rounded-full btn">
+                                <a class=" text-black text-xl font-extrabold rounded-full hover:text-black">Send
+                                    Message</a>
+                                <span
+                                    class=" bg-black text-[#ABEF5F] w-8 h-8  rounded-full flex justify-center items-center">
+                                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- footer section -->
+    <footer class="footer footer-center bg-[#1C1C1C] text-primary-content p-10">
+        <aside class="mt-20">
+            <div class="navbar-start inline-flex md:justify-center mb-5 md:gap-3 gap-1 items-center">
+                <div class=" bg-[#ABEF5F] text-black w-8 h-8  rounded-full flex justify-center items-center">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </div>
+                <a class="font-extrabold text-white text-3xl">Rinterio</a>
+            </div>
+            <p class="md:w-2/3 mx-auto text-clifford">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </aside>
+        <div class="text-center text-[#E9E9E9]">
+            <ul class="menu menu-horizontal px-1 text-[#494949]">
+                <li><a class="text-[#E9E9E9] text-lg">Home</a></li>
+                <li><a class="text-[#E9E9E9] text-lg">Services</a></li>
+                <li><a class="text-[#E9E9E9] text-lg">Portfolio</a></li>
+                <li><a class="text-[#E9E9E9] text-lg">Blogs</a></li>
+                <li><a class="text-[#E9E9E9] text-lg">Contact Us</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="grid grid-flow-col gap-4">
+                <a>
+                    <div class="bg-[#ABEF5F] py-3 px-5 flex items-center gap-3 rounded-[32px]">
+                        <a class="text-xl font-extrabold text-black">Book Consult</a>
+                        <i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white w-8 h-8 rounded-full flex justify-center items-center"></i>
+                    </div>
+                </a>
+            </div>
+        </nav>
     </footer>
 </body>
 
