@@ -23,30 +23,17 @@
                         clifford: '#737373',
                     },
                     fontFamily: {
-                        manrope: ['Manrope', 'sans-serif'],
+                        manropeFont: 'Manrope',
                     },
                     backgroundImage: {
-                        imageOne: "url('file:///C:/Projects/Programing%20Hero/Milestone%20-03/assignment%20-%203/assets/bg.jpg')",
+                        imageOne: "url('./assets/bg.jpg')",
                     },
                 },
             },
         }
     </script>
-    <style>
-        * {
-            font-family: "Manrope";
-        }
-
-        .contact-form {
-            background-image: url('./assets/bg.jpg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-    </style>
 </head>
-
-<body class="manrope">
+<body class="font-manropeFont">
     <header class="bg-gradient-to-r from-[#ffffff00] to-[rgb(255,255,255)] manrope">
         <nav class="navigation-bar-styles pt-10 md:w-10/12 w-full mx-auto">
             <div class="navbar justify-between mb-10">
@@ -504,7 +491,7 @@
             </div>
         </section>
         <!-- contact form section -->
-        <section class="contact-form w-full  border-8 border-solid border-white">
+        <section class="bg-imageOne bg-center bg-cover w-full  border-8 border-solid border-white">
             <div class="bg-opacity-55 bg-white">
                 <div class="text-center">
                     <div
